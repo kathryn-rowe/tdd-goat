@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/src/tdd-goat/goat_app":{"guestpath":"/home/vagrant/src/tdd-goat/goat_app","hostpath":"C:/Users/owner/src/tdd-goat/goat_app","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/owner/src/tdd-goat/vagrant_files","disabled":false,"__vagrantfile":true}}}
