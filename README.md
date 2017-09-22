@@ -15,7 +15,7 @@ Move into folder.
 ```sh
 $ cd tdd-goat
 ```
-Set-up Vagrant Linux maching:
+Set-up Vagrant Linux machine:
 
 ```sh
 $ cd vagrant_files
@@ -25,6 +25,9 @@ $ vagrant up
 ```
 ```sh
 $ vagrant ssh
+```
+```sh
+$ cd src/tdd-goat/goat_app/
 ```
 Create virtual environment:
 
@@ -43,7 +46,7 @@ $ sudo apt-get update
 $ sudo apt-get install firefox
 ```
 ```sh
-$ wget https://github.com/mozilla/geckodriver/releases/download/v0.16.1/geckodriver-v0.16.1-linux64.tar.gz
+$ wget https://github.com/mozilla/geckodriver/releases/download/v0.19.0/geckodriver-v0.19.0-linux64.tar.gz
 $ sudo sh -c 'tar -x geckodriver -zf geckodriver-v0.19.0-linux64.tar.gz -O > /usr/bin/geckodriver'
 $ sudo chmod +x /usr/bin/geckodriver
 $ rm geckodriver-v0.19.0-linux64.tar.gz
