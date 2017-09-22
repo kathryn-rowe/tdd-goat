@@ -28,24 +28,15 @@ $ vagrant up
 ```sh
 $ vagrant ssh
 ```
-```sh
-$ cd src/tdd-goat/goat_app/
-```
-Create virtual environment:
 
-```sh
-$ virtualenv env
-```
-Activate virtual environment:
-
-```sh
-$ source env/bin/activate
-```
 The book requires Python3
 
 ```sh
 $ python -V
 $ alias python=/usr/bin/python3.5
+$ pip -V
+$ sudo apt-get install python3-pip
+$ pip3 -V
 ```
 Install dependencies:
 
@@ -60,6 +51,21 @@ $ sudo chmod +x /usr/bin/geckodriver
 $ rm geckodriver-v0.19.0-linux64.tar.gz
 $ geckodriver --version
 ```
+Create virtual environment:
+
 ```sh
-$ pip install -r requirements.txt
+$ cd src/tdd-goat/goat_app/
+```
+```sh
+$ virtualenv env
+```
+Activate virtual environment:
+
+```sh
+$ source env/bin/activate
+```
+Install dependencies:
+
+```sh
+$ pip3 install -r requirements.txt
 ```
