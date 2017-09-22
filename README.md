@@ -1,6 +1,8 @@
 # Obey the Testing Goat  :goat:
 https://www.obeythetestinggoat.com/book/pre-requisite-installations.html
 
+From the book: "Create a new Python file ... wherever you want to keep the code for your project, and enter the following code. If you feel like making a few little goat noises as you do it, it may help:"
+
 ### Setup/Installation
 
 Install requirements to run locally.
@@ -39,6 +41,12 @@ Activate virtual environment:
 ```sh
 $ source env/bin/activate
 ```
+The book requires Python3
+
+```sh
+$ python -V
+$ alias python=/usr/bin/python3.5
+```
 Install dependencies:
 
 ```sh
@@ -50,6 +58,7 @@ $ wget https://github.com/mozilla/geckodriver/releases/download/v0.19.0/geckodri
 $ sudo sh -c 'tar -x geckodriver -zf geckodriver-v0.19.0-linux64.tar.gz -O > /usr/bin/geckodriver'
 $ sudo chmod +x /usr/bin/geckodriver
 $ rm geckodriver-v0.19.0-linux64.tar.gz
+$ geckodriver --version
 ```
 ```sh
 $ pip install -r requirements.txt

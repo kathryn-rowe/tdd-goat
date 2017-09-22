@@ -21,8 +21,12 @@ echo "LANGUAGE=en_US.UTF-8:" >> /etc/default/locale
 echo -e "\nUpdating package listings\n"
 sudo apt-get update
 
+# echo -e "\nInstalling firefox"
+# sudo apt-get install firefox
+
 #install useful linux packages
 echo -e "\nIstalling Linux packages\n"
+alias python=/usr/bin/python3.5
 sudo apt-get install -y git python-dev python-pip python-virtualenv sqlite3 libxml2-dev libxslt1-dev libffi-dev nodejs npm libssl-dev postgresql-client postgresql postgresql-contrib postgresql-plpython postgresql-server-dev-9.5
 
 # upgrade to most recent pip
