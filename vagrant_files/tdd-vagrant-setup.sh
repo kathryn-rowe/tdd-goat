@@ -14,7 +14,7 @@ sudo /etc/init.d/postgresql restart
 echo
 echo
 echo "***************************************"
-echo "HACKBRIGHT VAGRANT SET UP SUCCESSFULLY!"
+echo "VAGRANT SET UP SUCCESSFULLY!"
 echo "***************************************"
 echo
 echo

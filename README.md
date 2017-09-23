@@ -28,39 +28,21 @@ $ vagrant up
 ```sh
 $ vagrant ssh
 ```
-
 The book requires Python3
 
 ```sh
 $ python -V
 $ alias python=/usr/bin/python3.5
 $ pip -V
-$ sudo apt-get install python3-pip
-$ pip3 -V
 ```
-Install dependencies:
-
-```sh
-$ sudo apt-get update
-$ sudo apt-get install firefox
-```
-```sh
-$ wget https://github.com/mozilla/geckodriver/releases/download/v0.19.0/geckodriver-v0.19.0-linux64.tar.gz
-$ sudo sh -c 'tar -x geckodriver -zf geckodriver-v0.19.0-linux64.tar.gz -O > /usr/bin/geckodriver'
-$ sudo chmod +x /usr/bin/geckodriver
-$ rm geckodriver-v0.19.0-linux64.tar.gz
-$ geckodriver --version
-```
-Create virtual environment:
+Create & activate virtual environment:
 
 ```sh
 $ cd src/tdd-goat/goat_app/
 ```
 ```sh
-$ virtualenv env
+$ pyvenv env
 ```
-Activate virtual environment:
-
 ```sh
 $ source env/bin/activate
 ```

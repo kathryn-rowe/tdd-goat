@@ -1,5 +1,3 @@
-# HACKBRIGHT VERSION DECEMBER 2016
-
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -20,6 +18,7 @@ Vagrant.configure(2) do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "bento/ubuntu-16.04"
+  config.vm.hostname = 'TDD-Goat-vagrant'
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -30,9 +29,6 @@ Vagrant.configure(2) do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   config.vm.network "forwarded_port", guest: 8000, host: 8000
-  config.vm.network "forwarded_port", guest: 5001, host: 5001
-  config.vm.network "forwarded_port", guest: 5432, host: 5432
-  config.vm.network "forwarded_port", guest: 8888, host: 8888
 
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
@@ -43,8 +39,8 @@ Vagrant.configure(2) do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
-  config.vm.provision :shell, path: "hb-linux-setup.sh"
-  config.vm.provision :shell, path: "hb-vagrant-setup.sh"
+  config.vm.provision :shell, path: "tdd-linux-setup.sh"
+  config.vm.provision :shell, path: "tdd-vagrant-setup.sh"
 
   # Set the amount of RAM the virtual machine has access to and keep its
   # clock in sync with host machine clock
