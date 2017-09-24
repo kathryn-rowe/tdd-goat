@@ -24,7 +24,7 @@ sudo apt-get install -y firefox
 #install useful linux packages
 echo -e "\nIstalling Linux packages\n"
 
-sudo apt-get install -y git python3-dev python3-pip python3-venv sqlite3 libxml2-dev libxslt1-dev libffi-dev libssl-dev postgresql-client postgresql postgresql-contrib postgresql-plpython postgresql-server-dev-9.5
+sudo apt-get install -y git python3-dev python3-pip python3-venv sqlite3 libxml2-dev libxslt1-dev libffi-dev libssl-dev postgresql-client postgresql postgresql-contrib postgresql-plpython postgresql-server-dev-9.5 xvfb xserver-xephyr vnc4server
 
 # upgrade to most recent pip
 echo -e "\nUpgrading pip\n"
