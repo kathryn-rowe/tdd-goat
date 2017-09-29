@@ -2,3 +2,6 @@ env/
 geckodriver.log
 *.pyc
 __pycache__
+__init__.py
+migrations/
+superlists/db.sqlite3
