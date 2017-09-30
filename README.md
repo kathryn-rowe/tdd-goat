@@ -17,6 +17,8 @@ Move into folder.
 ```sh
 $ cd tdd-goat
 ```
+**delete the directory superlists at tdd-goat/goat_app/**
+
 Set-up Vagrant Linux machine:
 
 ```sh
@@ -71,4 +73,10 @@ display.stop()
 ```
 ```sh
 $ python3 functional_tests.py
+```
+If you'd like to "see" the Firefox browser, install a Desktop Environment. The tutorial does instruct you to open the browser manually a few times, although it's not required.
+
+```sh
+$ sudo apt-get install xfce4
+$ sudo startxfce4&
 ```
