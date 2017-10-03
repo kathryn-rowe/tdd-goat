@@ -13,11 +13,11 @@ display.start()
 
 class NewVisitorTest(LiveServerTestCase):
 
-	# def setUp(self):
-	# 	self.browser = webdriver.Firefox()
+	def setUp(self):
+		self.browser = webdriver.Firefox()
 
-	# def tearDown(self):
-	# 	self.browser.quit()
+	def tearDown(self):
+		self.browser.quit()
 
 	def wait_for_row_in_list_table(self, row_text):
 		start_time = time.time()
@@ -36,7 +36,7 @@ class NewVisitorTest(LiveServerTestCase):
 	def test_can_start_a_list_for_one_user(self):
 		# Edith has heard about a cool new online to-do app. She goes
 		# to check out its homepage
-		self.browser = webdriver.Firefox()
+		# self.browser = webdriver.Firefox()
 		self.browser.get(self.live_server_url)
 
 		# She notices the page title and header mention to-do lists
@@ -71,11 +71,11 @@ class NewVisitorTest(LiveServerTestCase):
 		self.wait_for_row_in_list_table('2: Use peacock feathers to make a fly')
 		self.wait_for_row_in_list_table('1: Buy peacock feathers')
 
-		self.browser.quit()
+		# self.browser.quit()
 
 	def test_multiple_users_can_start_lists_at_different_urls(self):
 		# Edith starts a new to-do list
-		self.browser = webdriver.Firefox()
+		# self.browser = webdriver.Firefox()
 		self.browser.get(self.live_server_url)
 		inputbox = self.browser.find_element_by_id('id_new_item')
 		inputbox.send_keys('Buy peacock feathers')
@@ -117,5 +117,5 @@ class NewVisitorTest(LiveServerTestCase):
 
 		self.fail('Finish the test!')
 
-		self.browser.quit()
+		# self.browser.quit()
 		display.stop()
