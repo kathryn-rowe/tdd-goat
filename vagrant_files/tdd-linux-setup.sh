@@ -32,9 +32,9 @@ sudo pip install -U pip
 
 # install useful python packages
 echo -e "\nInstalling Python packages\n"
-sudo pip install psycopg2 ipython notebook python-twitter
+sudo pip install psycopg2 ipython notebook
 
-# install useful python packages
+# install geckodriver
 echo -e "\nInstalling Python packages\n"
 wget https://github.com/mozilla/geckodriver/releases/download/v0.19.0/geckodriver-v0.19.0-linux64.tar.gz
 sudo sh -c 'tar -x geckodriver -zf geckodriver-v0.19.0-linux64.tar.gz -O > /usr/bin/geckodriver'
