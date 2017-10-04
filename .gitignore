@@ -5,3 +5,4 @@ __pycache__
 __init__.py
 migrations/
 superlists/db.sqlite3
+.vagrant/
