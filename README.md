@@ -54,7 +54,7 @@ Create & activate virtual environment:
 vagrant@TDD-Goat-vagrant:~$ cd src/tdd-goat/goat_app/
 ```
 ```sh
-vagrant@TDD-Goat-vagrant:~/src/tdd-goat/goat_app$ pyvenv env
+vagrant@TDD-Goat-vagrant:~/src/tdd-goat/goat_app$ virtualenv --python=python3.6 env
 ```
 ```sh
 vagrant@TDD-Goat-vagrant:~/src/tdd-goat/goat_app$ source env/bin/activate
@@ -62,7 +62,7 @@ vagrant@TDD-Goat-vagrant:~/src/tdd-goat/goat_app$ source env/bin/activate
 Install dependencies:
 
 ```sh
-(env) vagrant@TDD-Goat-vagrant:~/src/tdd-goat/goat_app$ pip3 install -r requirements.txt
+(env) vagrant@TDD-Goat-vagrant:~/src/tdd-goat/goat_app$ pip install -r requirements.txt
 ```
 Get started with the goat! https://www.obeythetestinggoat.com/book/part1.harry.html
 

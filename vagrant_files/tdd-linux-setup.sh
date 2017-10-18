@@ -14,34 +14,41 @@ set -e
 echo "LANG=en_US.UTF-8" > /etc/default/locale
 echo "LANGUAGE=en_US.UTF-8:" >> /etc/default/locale
 
-#For Ubuntu 16.04, run this command to install the PPA
+# #For Ubuntu 16.04, run this command to install the PPA
 sudo add-apt-repository ppa:jonathonf/python-3.6
 
 #update package listings
 echo -e "\nUpdating package listings\n"
 sudo apt-get update
-
 sudo apt-get install -y python3.6
-
-# Thanks to Ubuntu Handbook for these directions http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/
-# sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1
-sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
-# sudo update-alternatives --config python3
-
 echo "*************************************"
 echo "Installed Python 3.6"
 echo "*************************************"
 
+sudo apt-get install -y python3-pip
+pip3 install --upgrade pip
+pip3 install virtualenv
+
+
+# # Thanks to Ubuntu Handbook for these directions http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/
+# # sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1
+# # sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
+# # sudo update-alternatives --config python3
+
+# python3 -m pip install --user virtualenvwrapper
+# echo "source virtualenvwrapper.sh" >> ~/.bashrc
+# source ~/.bashrc
+
 #install useful linux packages
 echo -e "\nIstalling Linux packages\n"
-sudo apt-get install -y git python3-dev python3-pip python3-venv sqlite3 libxml2-dev libxslt1-dev libffi-dev libssl-dev postgresql-client postgresql postgresql-contrib postgresql-plpython postgresql-server-dev-9.5 xvfb xserver-xephyr vnc4server
+sudo apt-get install -y git python3-dev sqlite3 libxml2-dev libxslt1-dev libffi-dev libssl-dev postgresql-client postgresql postgresql-contrib postgresql-plpython postgresql-server-dev-9.5 xvfb xserver-xephyr vnc4server
 echo "*************************************"
 echo "Installed Linux packages"
 echo "*************************************"
 
-# upgrade to most recent pip
-echo -e "\nUpgrading pip\n"
-sudo pip3 install -U pip
+# # upgrade to most recent pip
+# echo -e "\nUpgrading pip\n"
+# sudo pip3 install -U pip
 
 # install useful python packages
 echo -e "\nInstalling Python packages\n"
