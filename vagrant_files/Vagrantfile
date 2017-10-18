@@ -9,15 +9,13 @@
 
 Vagrant.configure(2) do |config|
 
-  ########## OPTIONS WE'RE ACTUALLY USING ##########
-
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "bento/ubuntu-16.10"
+  config.vm.box = "bento/ubuntu-16.04"
   config.vm.hostname = 'TDD-Goat-vagrant'
 
   # Disable automatic box update checking. If you disable this, then
@@ -47,7 +45,7 @@ Vagrant.configure(2) do |config|
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "1024"
     vb.customize [ "guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-set-threshold", 1000 ]
-    vb.gui = true
+    # vb.gui = true
   end
 
   ########### CONTENT BELOW FROM DEFAULT VAGRANTFILE ##########
