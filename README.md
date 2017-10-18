@@ -38,15 +38,15 @@ $ vagrant up
 ```sh
 $ vagrant ssh
 ```
-The book requires Python3
+The book requires Python3.6
 
 ```sh
 vagrant@TDD-Goat-vagrant:~$ python3 -V
-Python 3.5.2
+Python 3.6.3
 ```
 ```sh
-vagrant@TDD-Goat-vagrant:~$ pip -V
-pip 9.0.1 from /home/vagrant/src/tdd-goat/goat_app/env/lib/python3.5/site-packages (python 3.5)
+vagrant@TDD-Goat-vagrant:~$ pip3 -V
+pip 9.0.1 from /usr/local/lib/python3.6/dist-packages (python 3.6)
 ```
 Create & activate virtual environment:
 
@@ -62,11 +62,11 @@ vagrant@TDD-Goat-vagrant:~/src/tdd-goat/goat_app$ source env/bin/activate
 Install dependencies:
 
 ```sh
-(env) vagrant@TDD-Goat-vagrant:~/src/tdd-goat/goat_app$ pip install -r requirements.txt
+(env) vagrant@TDD-Goat-vagrant:~/src/tdd-goat/goat_app$ pip3 install -r requirements.txt
 ```
 Get started with the goat! https://www.obeythetestinggoat.com/book/part1.harry.html
 
-Remember to run with Python 3!
+Remember to run with Python 3.6!
 
 ```sh
 (env) vagrant@TDD-Goat-vagrant:~/src/tdd-goat/goat_app$ python3 functional_tests.py
